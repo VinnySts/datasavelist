@@ -6,10 +6,6 @@
     font-weight: bold;
 }
 
-html{
-    min-width: 600px;
-}
-
 body{
     width: 100%;
     min-width: 440px;
@@ -24,7 +20,6 @@ header{
     width: 100%;
     height: 90px;
     padding: 10px 35px 0px 0px;
-    position:absolute;
     background-repeat: no-repeat;
     background-color: #01182e;
 }
@@ -78,7 +73,7 @@ main div{
     display: flex;
     max-width: 75%;
     flex-wrap: wrap;
-    min-width: 500px;
+    min-width: 400px;
     align-items: center;
     border-radius: 10px;
     justify-content: center;
@@ -116,12 +111,10 @@ main div p{
 main img{
     width: 40%;
     height: 100%;
-    min-width: 500px;
+    min-width: 400px;
 }
 
-.classic{
-    margin-top: 5vh;
-    padding: 5vh;
+.classic{;
     justify-content: center;
 }
 
