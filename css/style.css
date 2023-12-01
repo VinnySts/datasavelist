@@ -143,6 +143,7 @@ ul li a{
     display: inline;
     cursor: pointer;
     padding-top: 7px;
+    color: #fff;
     margin: 3px 3px 3px 0px;
     text-decoration: none;    
 }
