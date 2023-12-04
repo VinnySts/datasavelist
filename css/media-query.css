@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/* TIPICAL DEVICE BREAKPOINTS
+-----------------------------
+Small: until 600px
+Smartphone: 600px until 768px
+Tablet: 768px until 992px
+Desktop: 992px until 1200px
+Biggerst: above 1200px
+*/
+
+@media screen and (min-width: 768px){
+    button#burger{
+        display: none;
+    }    
+
+    menu{
+        display: block;
+    }
+    menu > ul > li{
+        display: inline-block;
+    }
+}

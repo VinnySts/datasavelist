@@ -8,7 +8,7 @@
 
 body{
     width: 100%;
-    min-width: 440px;
+    min-width: 600px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -19,13 +19,15 @@ header{
     top: 0;
     width: 100%;
     height: 90px;
-    padding: 10px 35px 0px 0px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
     background-repeat: no-repeat;
     background-color: #01182e;
 }
 
 header a img{
-    position: absolute;
+    position: relative;
     cursor: pointer;
     border: none;
 }
@@ -34,31 +36,12 @@ header a img{
     box-shadow: 0px 0px 15px #0471d763;   
 }
 
-#logoprincipal img{
+#logoPrincipal img{
     display: block;
     width: 200px;
     height: auto;
     background-position: 35px, left;
 }
-/* exibir menu burger com width: 600px;
-span#burger{
-    background-color: #01182e;
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
-}
-
-span#burger:hover{
-    background-color: #fff;
-    color: #000;
-}
-
-menu{
-    display: none;
-}
-*/
 
 main{
     flex: 1;
@@ -73,22 +56,25 @@ main div{
     display: flex;
     max-width: 75%;
     flex-wrap: wrap;
-    min-width: 400px;
-    align-items: center;
     border-radius: 10px;
-    justify-content: center;
     background-color: #01182e4f;
     border: 1px solid #0862b569;
     box-shadow: 5px 5px 20px #0471d763;
 }
 
+main img{
+    width: 40%;
+    height: auto;
+    min-width: 400px;
+}
+
 main div h1{
     flex: 1;
     height: 20%;
-    width: 75%;  
     color: #fff;
     line-height: 1.5;
     font-size: 18px;
+    display: flex;
     text-align: center;
     justify-content: center;
 }
@@ -98,18 +84,9 @@ p{
     text-transform: uppercase;
     padding: 0px 5% 0px 5%;
     line-height: 1.5;
-}
-
-main div p{
     font-weight: normal;
     font-size: 15px;
     color: #fff;
-}
-
-main img{
-    width: 40%;
-    height: 100%;
-    min-width: 400px;
 }
 
 .classic{
@@ -119,7 +96,7 @@ main img{
 ul{
     text-align: right;
     position: relative;
-    padding-top: 25px;
+
 }
 
 li{
@@ -131,7 +108,6 @@ li{
 ul li a{
     font-size: 15px;
     font-weight: bolder;
-    display: inline;
     cursor: pointer;
     padding-top: 7px;
     color: #fff;
@@ -145,7 +121,27 @@ ul li a:visited{
 
 ul li a:hover{
     cursor: pointer;
-    text-shadow: 0px 0px 5px #3398f8;
+    color: rgb(2, 221, 255);
+    text-shadow: 0px 0px 15px rgb(2, 221, 255);
+}
+
+button#burger{
+    background-color: #01182e;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+button#burger:hover{
+    color:rgb(2, 221, 255);
+    text-shadow: 0px 0px 15px rgb(2, 221, 255);
+}
+
+menu{
+    display: block;
 }
 
 figure{
@@ -154,7 +150,6 @@ figure{
 }
 
 img{
-    margin: 0px 25px 10px 25px;
     border-radius: 5px;
     border: 2px solid #fff;
 }
