@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DSL | Data Save List</title>
     <link rel="icon" type="img/x-icon" href="/img/favicon.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..68,100..700,0..1,-70..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..68,100..700,0..1,-70..200"/>
     <link rel="stylesheet" href="css/style-pages.css">
+    <link rel="stylesheet" href="css/media-query.css">
     <style>
         img{
             margin: 0% 45px 10px 45px;
@@ -14,12 +15,12 @@
     </style>
 </head>
 
-<body>
-    <header id="logoPrincipal">
+<body onresize="changeSize">
+    <header>
         <a href="index.html">
             <img src="img/logo.png" alt="logo do site">
         </a>
-       <!--<span id="burger" class="material-symbols-outlined" onclick="clickMenu()">sports_esports</span>-->
+        <button id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</button>
             <menu id="itens">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
@@ -32,10 +33,9 @@
             </menu>
     </header>
 
-   <main class="classic">
-
     <h1>PLAYSTATION 3</h1>
 
+   <main class="classic">
         <figure>
             <img id="game60" src="img/asura.jpg" onclick="toggleImage('game60');" alt="Asura’s Wrath">
             <a href="#" class="button" onclick="toggleImage('game60');"><span>Asura’s Wrath</span></a>
