@@ -1,14 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
     font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    font-weight: bold;
 }
 
 body{
-    min-height: 100vh;
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
     background-color: #02325F;
 }
@@ -16,7 +16,7 @@ body{
 header{
     top: 0;
     height: 70px;
-    display: block; 
+    display: flex;
     align-items: center;
     justify-content: space-between;
     background-repeat: no-repeat;
@@ -25,15 +25,14 @@ header{
 }
 
 header a img{
-    display: flex;
-    position: relative;
-    cursor: pointer;
-    border: none;
-    display: block;
+    margin: 0;
     width: 150px;
     height: auto;
+    border: none;
+    display: block;
     padding: 0 10px;
-    margin: 0;
+    cursor: pointer;
+    position: relative;
 }
 
 main{
@@ -105,7 +104,7 @@ button#burger:hover{
 }
 
 menu{
-    display: block;
+    display: none;
 }
 
 figure{
