@@ -17,6 +17,7 @@ header{
     top: 0;
     height: 70px;
     display: flex;
+    z-index: 1000;
     align-items: center;
     justify-content: space-between;
     background-repeat: no-repeat;
@@ -47,9 +48,9 @@ main{
 }
 
 h1{
-    padding: 10px 40%;
-    align-items: center;
-    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
     font-size: 18px;
     color: #fff;
 }
@@ -58,11 +59,9 @@ ul li{
     display: flex;
     justify-content: center;
     text-align: center;
-
-    opacity: 75%;
     list-style: none;
     padding:10px 0px 10px 0px;
-    background-color: #01182e;
+    background-color: #01182e79;
     box-shadow: 0px 0px 2px #0471d763;
 }
 
@@ -103,11 +102,23 @@ button#burger:hover{
     text-shadow: 0px 0px 15px rgb(2, 221, 255);
 }
 
+@keyframes slideDown{
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 menu{
     padding-top: 290px;
     display: none;
     position: fixed;
     width: 30%;
+    animation: slideDown 0.6s ease forwards;
 }
 
 figure{
