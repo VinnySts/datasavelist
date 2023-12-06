@@ -20,13 +20,14 @@ Biggerst: above 1200px
     }
 
     menu{
-        flex: 1;;
+        flex: 1;
         display:block;
+        position: relative;
+        padding-top: 0;
     }
 
     ul{
         text-align: right;
-        position: relative;
     }
 
     menu > ul > li{
@@ -36,7 +37,6 @@ Biggerst: above 1200px
         display: inline;
         font-size: 15px;
         padding-right: 20px;
-        position: relative;
         font-weight: bolder;
         text-decoration: none;
         background:none;
