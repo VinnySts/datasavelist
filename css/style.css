@@ -51,6 +51,7 @@ main div{
     display: flex;
     max-width: 80%;
     flex-wrap: wrap;
+    min-width: 375px;
     border-radius: 10px;
     background-color: #01182e4f;
     border: 1px solid #0862b569;
@@ -78,12 +79,6 @@ p{
     color: #fff;
 }
 
-main img{
-    width: 40%;
-    height: auto;
-    min-width: 400px;
-}
-
 ul li{
     display: flex;
     justify-content: center;
@@ -103,17 +98,6 @@ ul li a{
     text-decoration: none;
 }
 
-/*ul li a::after{
-    content: " ";
-    width: 0%;
-    height: 2px;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.5s ease-in-out;
-}*/
-
 ul li a:visited{
     color: #fff;
 }
@@ -122,11 +106,19 @@ ul li:hover{
     cursor: pointer;
     background-color: rgb(2, 221, 255);
     box-shadow: 0px 0px 10px rgb(2, 221, 255);
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 ul li:hover ::after{
     width: 100%;
+}
+
+menu{
+    padding-top: 290px;
+    display: none;
+    animation: slideDown 0.6s ease forwards;
+    position: fixed;
+    width: 30%;
 }
 
 button#burger{
@@ -141,11 +133,6 @@ button#burger{
     z-index: 999;
 }
 
-button#burger:hover{
-    color:rgb(2, 221, 255);
-    text-shadow: 0px 0px 15px rgb(2, 221, 255);
-}
-
 @keyframes slideDown{
     from{
         opacity: 0;
@@ -157,12 +144,40 @@ button#burger:hover{
     }
 }
 
-menu{
-    padding-top: 290px;
-    display: none;
-    animation: slideDown 0.6s ease forwards;
-    position: fixed;
-    width: 30%;
+main img{
+    width: 80%;
+    height: 250px;
+    min-width: 400px;
+    box-shadow: 0px 0px 15px #0471d7;
+}
+
+.carrousel{
+    justify-content: center;
+    height: 250px;
+    width: 400px;
+    margin: 0px 15vw 70px 15vw;
+    background-color: #ffffff00;
+    box-shadow: none;
+    border: none;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0);
+    background-color: #ffffff00;
+    box-shadow: none;
+    border: none;
+}
+
+#img img{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#img img.active{
+    opacity: 1;
 }
 
 img{
@@ -180,7 +195,7 @@ footer{
     background-color: rgb(1, 24, 46);
 }
 
-div{
+footer div{
     display: flex;
     align-items: start;
     justify-content: start;

@@ -81,7 +81,7 @@ ul li:hover{
     cursor: pointer;
     background-color: rgb(2, 221, 255);
     box-shadow: 0px 0px 10px rgb(2, 221, 255);
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 ul li:hover ::after{
@@ -98,11 +98,6 @@ button#burger{
     border: none;
     margin-right: auto;
     z-index: 999;
-}
-
-button#burger:hover{
-    color:rgb(2, 221, 255);
-    text-shadow: 0px 0px 15px rgb(2, 221, 255);
 }
 
 @keyframes slideDown{

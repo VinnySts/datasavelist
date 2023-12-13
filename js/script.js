@@ -37,3 +37,24 @@ window.onload = function () {
         }
     });
 }
+
+/*efeito carrosel*/
+
+const imgs = document.getElementById("img");
+const img = document.querySelectorAll("#img img");
+
+let idx = 0;
+
+function slider(){
+    img.forEach(img => img.classList.remove('active'));
+
+    idx++;
+
+    if(idx > img.length - 1){
+        idx = 0;
+    }
+
+    img[idx].classList.add('active');
+}
+
+setInterval(slider, 3000);
