@@ -142,6 +142,7 @@ figure a{
     color: rgb(251, 251, 251);
     font-size: 13px;
     display: block;
+    font-weight: bold;
     cursor: pointer;
     padding-top: 7px;
     text-align: center;
@@ -155,7 +156,7 @@ figure a{
 figure a:hover{
     color:  rgb(120, 232, 250);
     text-shadow: 0 0 12px rgb(2, 221, 255);
-    font-weight: bold;
+    font-weight: lighter;
     box-shadow: none;
 }
 
