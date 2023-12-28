@@ -17,7 +17,6 @@ header{
     height: 70px;
     display: flex; 
     z-index: 1000;
-    padding: 10 20px;
     align-items: center;
     background-repeat: no-repeat;
     background-color: #01182e;
@@ -25,13 +24,14 @@ header{
 }
 
 header a img{
-    position: relative;
-    cursor: pointer;
-    border: none;
+    margin: 0;
     width: 150px;
     height: auto;
-    padding: 10px;
-    max-width: 100%;
+    border: none;
+    display: block;
+    padding: 0 10px;
+    cursor: pointer;
+    position: relative;
 }
 
 main{
@@ -188,32 +188,72 @@ img{
 footer{
     width: 100%;
     height: auto;
-    padding: 10px 0px 10px 0px;
     color: #fff;
-    font-size: 15px;
+    font-size: 12px;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: rgb(1, 24, 46);
 }
 
-footer div{
+div{
+    gap: 5px;
     display: flex;
     align-items: start;
-    justify-content: start;
-    gap: 5px;
+    flex-direction: row;
 }
 
 footer img{
     border: none;
-    padding: 5px 5px 5px 25px;
+    margin: 5px 5px 5px 5px;
 }
 
 footer a{
     border: none;
-    display: inline;
     color: #fff;
-    font-size: 12px;
-    padding: 5px 5px 5px 5px;
-    align-items: center;
-    font-weight: lighter;
+    margin: 5px 5px 5px 0px;
     text-decoration: none;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: start;
+}
+
+.social-links{
+    margin: 45px 0px 0px 10px ;
+}
+
+.social-links, .map{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links > div,
+.map > div{
+    display: flex;
+    align-items: center;
+}
+
+.map{
+    font-size: 10px;
+    align-items: end;
+    line-height: 10px;
+    flex-direction: column;
+    margin: 0 10px 10px 0px;
+    text-transform: uppercase;
+}
+
+footer p{
+    width: 80px;
+    font-size: 10px;
+    color: #0060ba;
+    font-weight: bolder;
+}
+
+.img-link{
+    margin-top: 45px;
+    height: 60px;
 }
