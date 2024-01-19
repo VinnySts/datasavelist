@@ -51,7 +51,7 @@ main div{
     display: flex;
     max-width: 80%;
     flex-wrap: wrap;
-    min-width: 400px;
+    min-width: 375px;
     border-radius: 10px;
     margin: 10px 500px;
     background-color: #01182e4f;
