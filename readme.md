@@ -6,6 +6,6 @@ Este projeto de website consiste em uma lista de controle pessoal, contendo tít
 
 STATUS:
 
-Esse website é puramente demonstrativo, servindo apenas como item de portfólio e está e atualmente se encontra em construção.
+Esse website é puramente demonstrativo, servindo apenas como item de portfólio e atualmente se encontra em construção.
 
 
