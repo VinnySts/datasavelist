@@ -51,8 +51,9 @@ main div{
     display: flex;
     max-width: 80%;
     flex-wrap: wrap;
-    min-width: 375px;
+    min-width: 400px;
     border-radius: 10px;
+    margin: 10px 500px;
     background-color: #01182e4f;
     border: 1px solid #0862b569;
     box-shadow: 5px 5px 20px #0471d763;
@@ -72,8 +73,7 @@ main div h1{
 p{
     text-align: center;
     text-transform: uppercase;
-    padding: 10px 5% 10px 5%;
-    line-height: 1.5;
+    line-height: 2;
     font-weight: normal;
     font-size: 15px;
     color: #fff;
@@ -145,17 +145,17 @@ button#burger{
 }
 
 main img{
-    width: 80%;
-    height: 250px;
-    min-width: 400px;
+    width: 75%;
+    height: auto;
+    margin: 20px;
     box-shadow: 0px 0px 15px #0471d7;
 }
 
 .carrousel{
-    justify-content: center;
     height: 250px;
-    width: 400px;
-    margin: 0px 15vw 0px 15vw;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
     background-color: #ffffff00;
     box-shadow: none;
     border: none;
@@ -191,6 +191,7 @@ footer{
     color: #fff;
     font-size: 12px;
     display: flex;
+    padding-top: 10px;
     flex-direction: column;
     justify-content: space-between;
     background-color: rgb(1, 24, 46);
@@ -223,7 +224,7 @@ footer a{
 }
 
 .social-links{
-    margin: 35px 0px 0px 10px ;
+    margin: 25px 0px 0px 10px;
 }
 
 .social-links, .map{
@@ -254,6 +255,7 @@ footer p{
 }
 
 .img-link{
+    justify-content: center;
     margin-top: 45px;
     height: 40px;
 }
