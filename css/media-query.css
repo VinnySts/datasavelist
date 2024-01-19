@@ -34,6 +34,13 @@
         list-style: none;
     }
 
+    main img{
+        width: 120%;
+        height: auto;
+        margin: auto;
+        box-shadow: 0px 0px 15px #0471d7;
+    }
+
     @keyframes slideDown{
         from{
             opacity: 0;
